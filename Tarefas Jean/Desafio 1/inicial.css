@@ -1,0 +1,195 @@
+body{
+    margin: 0%;
+    min-height: 100vh;
+    background-color: #FEFEED;
+ }
+  
+    ul {
+        list-style-type:none;
+        margin-top:0px;
+        margin-bottom: 0;
+        padding: 0%;
+        overflow: hidden;
+        background-color: rgb(244, 243, 208);
+        position: -webkit-sticky;
+        
+    }
+
+    li {
+        float: left;
+    }
+
+    li a{
+        font-family:"Open Sans", sans-serif;
+        font-size: 16px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(230, 228, 184);
+    }
+    .active {
+        background-color: rgb(230, 228, 184);
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header header header header'
+        'menu main2 main3 main4'
+        'left main5 main6 main7'
+        'footer footer footer footer';
+        gap: 5px;
+        background-color: #fefeed;;
+        padding: 0px;
+    }
+
+    .header { 
+        grid-area: header; 
+        font-family:'Quicksand', sans-serif; 
+        font-size: 50px;  
+        text-align: center; 
+        background-color: rgb(244, 243, 208); 
+        padding:0px; 
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        grid-area: menu;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 23px;
+        padding: 0px;
+        margin-left: 0%;
+        margin-right: 0;
+        margin-top: 0%;
+        margin-bottom: 0;
+    }
+
+    .left {
+        grid-area: left;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        padding: 0px;
+        margin-left: 5%;
+        margin-top: 15px;
+        margin-bottom: 0%;
+        margin-right: 2%;
+        text-align: justify;
+    }
+
+    .main2 {
+        grid-area: main2;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20.15px;
+        padding: 0%;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: justify;
+    }
+
+    .main3 {
+        grid-area: main3;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: justify;
+    }
+
+    .main4 {
+        grid-area: main4;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: justify;
+    }
+
+    .main5 {
+        grid-area: main5;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .main6 {
+        grid-area: main6;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: justify;
+    }
+
+    .main7 {
+        grid-area: main7;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: justify;
+    }
+
+    .footer {
+        grid-area: footer;
+        font-family: "Open Sans", sans-serif;
+        font-size: 35px;
+        padding: 2%;
+        margin-top: 15%;
+        margin-bottom: 0;
+        font-size: small;
+        text-align: center;
+        background-color: rgb(244, 243, 208);
+    }
+
+    .container {
+        position: relative;
+        color: white;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 5.5%;
+        text-align: left;
+        color:rgb(240, 237, 203);
+        font-family: "Merriweather", serif;
+        font-size: 3.5vw;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.727);
+        border-radius: 15px ;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .bottom {
+        position:absolute;
+        bottom: 55px;
+        left: 5.5%;
+        text-align: left;
+        color:rgb(240, 237, 203);
+        font-family: "Merriweather", serif;
+        font-size: 3.5vw;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.727);
+        border-radius: 15px ;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+      
