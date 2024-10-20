@@ -1,0 +1,169 @@
+body{
+    margin: 0%;
+    min-height: 100vh;
+    background-color: #FEFEED;
+    font-family: "Open Sans", sans-serif;
+ }
+  
+    ul {
+        list-style-type:none;
+        margin-top:0;
+        margin-bottom: 0;
+        padding: 0%;
+        overflow: hidden;
+        position: sticky;
+        top:0;
+        background-color: rgb(244, 243, 208);     
+        
+    }
+
+    li {
+        position: sticky;
+        top: 0;
+        float: left;
+    }
+
+    li a{
+        font-family:"Open Sans", sans-serif;
+        font-size: 16px;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: rgb(230, 228, 184);
+    }
+    .active {
+        background-color: rgb(230, 228, 184);
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header header header header'
+        'menu main2 main3 main4'
+        'left main5 main6 main7'
+        'footer footer footer footer';
+        gap: 5px;
+        background-color: #fefeed;
+        padding: 0px;
+    }
+
+    .header { 
+        grid-area: header; 
+        font-family:'Quicksand', sans-serif; 
+        font-size: 50px;  
+        text-align: center; 
+        background-color: rgb(244, 243, 208);
+        padding:0px; 
+        margin-top: 0%;
+    }
+
+
+    .menu {
+        grid-area: menu;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 23px;
+        padding: 0px;
+        margin-left: 35%;
+        margin-right: 0px;
+    }
+
+    .left {
+        grid-area: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 0px;
+        margin-left: 35%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        margin-right: 10%;
+        text-align: justify;
+    }
+
+    .main {
+        grid-area: main;
+        font-family: 'Merriweather', serif;
+        font-size: 20.15px;
+        padding: 0%;
+        margin-top: 2%;
+        margin-left: 27%;
+        margin-right: 27%;
+        text-align: justify;
+    }
+
+    .main2 {
+        grid-area: main2;
+        font-family: "Open Sans", sans-serif;
+        font-size: 20.15px;
+        padding: 0%;
+        margin-top: 2%;
+        margin-left: 27%;
+        margin-right: 27%;
+        text-align: justify;
+    }
+
+    .main5 {
+        grid-area: main5;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16.15px;
+        padding: 0%;
+        margin-left: 27%;
+        margin-right: 27%;
+        text-align: justify;
+    }
+
+       .footer {
+        grid-area: footer;
+        font-family: "Open Sans", sans-serif;
+        font-size: 35px;
+        padding: 2%;
+        margin-top: 15%;
+        border-bottom: 3%;
+        font-size: small;
+        text-align: center;
+        background-color: rgb(244, 243, 208);
+    }
+
+    .button {
+        background-color: #ededed;
+        border: none;
+        color: white;
+        padding: 5px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        margin-left: 35%;
+        transition-duration: 0s;
+        cursor: pointer;
+
+    }
+      
+    .button1 {
+        background-color: rgb(55, 56, 57);  
+        border: 2px solid #04aa6d00;
+        border-radius: 12px;
+        background-size: 24px 24px;
+        background-image: url(https://s3.glbimg.com/cdn/icons/sharebar/whatsapp/v2/whatsapp_inv.svg);
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+    }
+
+    .button1:hover {
+        background-image: url(https://s3.glbimg.com/cdn/icons/sharebar/whatsapp/v2/whatsapp_inv.svg);
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        background-color: #04AA6D;
+        color: white;
+    }
